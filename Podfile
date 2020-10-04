@@ -2,10 +2,12 @@
 # platform :ios, '9.0'
 
 target 'Twitter' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks 
-  # Pods for Twitter
+  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'AFNetworking'
-  pod 'BDBOAuth1Manager'
-  pod 'AlamofireImage'
+
+  # Pods for Twitter
+	pod 'AFNetworking'
+	pod 'BDBOAuth1Manager'
+	pod 'AlamofireImage'
+
 end

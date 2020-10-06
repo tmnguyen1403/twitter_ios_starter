@@ -55,12 +55,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Mbe-IH-ywi">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="138" id="Mbe-IH-ywi" customClass="TweetCellTableViewCell" customModule="Twitter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="138"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mbe-IH-ywi" id="HF6-ZK-Eum">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D86-GZ-AUO">
+                                            <rect key="frame" x="16" y="11" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="0rd-v0-Le0"/>
+                                                <constraint firstAttribute="height" constant="64" id="szD-LH-ecL"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Voder Kai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEh-d7-BgV">
+                                            <rect key="frame" x="88" y="11" width="82" height="22"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhZ-53-bMf">
+                                            <rect key="frame" x="88" y="36" width="271" height="91"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="D86-GZ-AUO" firstAttribute="top" secondItem="HF6-ZK-Eum" secondAttribute="topMargin" id="349-wL-ehP"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="PhZ-53-bMf" secondAttribute="bottom" id="4bl-7M-wJ8"/>
+                                        <constraint firstItem="PhZ-53-bMf" firstAttribute="top" secondItem="rEh-d7-BgV" secondAttribute="bottom" constant="3" id="PJ3-xu-LLO"/>
+                                        <constraint firstItem="rEh-d7-BgV" firstAttribute="top" secondItem="D86-GZ-AUO" secondAttribute="top" id="Pqf-4Q-8i1"/>
+                                        <constraint firstItem="D86-GZ-AUO" firstAttribute="leading" secondItem="HF6-ZK-Eum" secondAttribute="leadingMargin" id="UVN-rB-p1J"/>
+                                        <constraint firstItem="rEh-d7-BgV" firstAttribute="leading" secondItem="D86-GZ-AUO" secondAttribute="trailing" constant="8" id="bLN-Kp-xwa"/>
+                                        <constraint firstItem="PhZ-53-bMf" firstAttribute="leading" secondItem="D86-GZ-AUO" secondAttribute="trailing" constant="8" id="iUO-7g-LOz"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PhZ-53-bMf" secondAttribute="trailing" id="pSp-ck-Vz5"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -80,7 +111,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="px8-Us-gXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1591" y="170"/>
+            <point key="canvasLocation" x="1589.5999999999999" y="169.56521739130437"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KOn-LZ-4R2">

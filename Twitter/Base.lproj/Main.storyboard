@@ -36,6 +36,8 @@
                         <constraints>
                             <constraint firstItem="3e4-Tb-c9t" firstAttribute="centerY" secondItem="3Dn-6c-S68" secondAttribute="centerY" id="9DG-kY-Hl5"/>
                             <constraint firstItem="3e4-Tb-c9t" firstAttribute="centerX" secondItem="3Dn-6c-S68" secondAttribute="centerX" id="RLk-sy-SLn"/>
+                            <constraint firstItem="3e4-Tb-c9t" firstAttribute="centerY" secondItem="3Dn-6c-S68" secondAttribute="centerY" id="TOt-nO-Lij"/>
+                            <constraint firstItem="3e4-Tb-c9t" firstAttribute="centerX" secondItem="3Dn-6c-S68" secondAttribute="centerX" id="uBh-td-FxR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -62,35 +64,39 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account-icon" translatesAutoresizingMaskIntoConstraints="NO" id="D86-GZ-AUO">
-                                            <rect key="frame" x="16" y="11" width="64" height="64"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Voder Kai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEh-d7-BgV">
+                                            <rect key="frame" x="93" y="21" width="82" height="22"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhZ-53-bMf">
+                                            <rect key="frame" x="93" y="48" width="82" height="80"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account-icon" translatesAutoresizingMaskIntoConstraints="NO" id="D86-GZ-AUO">
+                                            <rect key="frame" x="9" y="21" width="64" height="96"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="0rd-v0-Le0"/>
                                                 <constraint firstAttribute="height" constant="64" id="szD-LH-ecL"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Voder Kai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEh-d7-BgV">
-                                            <rect key="frame" x="88" y="11" width="82" height="22"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhZ-53-bMf">
-                                            <rect key="frame" x="88" y="36" width="271" height="91"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="D86-GZ-AUO" firstAttribute="top" secondItem="HF6-ZK-Eum" secondAttribute="topMargin" id="349-wL-ehP"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="PhZ-53-bMf" secondAttribute="bottom" id="4bl-7M-wJ8"/>
-                                        <constraint firstItem="PhZ-53-bMf" firstAttribute="top" secondItem="rEh-d7-BgV" secondAttribute="bottom" constant="3" id="PJ3-xu-LLO"/>
+                                        <constraint firstItem="D86-GZ-AUO" firstAttribute="leading" secondItem="HF6-ZK-Eum" secondAttribute="leadingMargin" constant="-7" id="3Cb-uc-3bO"/>
+                                        <constraint firstAttribute="bottom" secondItem="PhZ-53-bMf" secondAttribute="bottom" constant="10" id="79G-XW-aK3"/>
+                                        <constraint firstItem="rEh-d7-BgV" firstAttribute="top" secondItem="D86-GZ-AUO" secondAttribute="top" id="Fc5-29-dad"/>
+                                        <constraint firstItem="PhZ-53-bMf" firstAttribute="trailing" secondItem="rEh-d7-BgV" secondAttribute="trailing" id="ICe-RW-UKd"/>
+                                        <constraint firstItem="D86-GZ-AUO" firstAttribute="top" secondItem="HF6-ZK-Eum" secondAttribute="topMargin" constant="10" id="J3K-l9-j5h"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="rEh-d7-BgV" secondAttribute="trailing" constant="10" id="JGN-SV-p6P"/>
                                         <constraint firstItem="rEh-d7-BgV" firstAttribute="top" secondItem="D86-GZ-AUO" secondAttribute="top" id="Pqf-4Q-8i1"/>
-                                        <constraint firstItem="D86-GZ-AUO" firstAttribute="leading" secondItem="HF6-ZK-Eum" secondAttribute="leadingMargin" id="UVN-rB-p1J"/>
-                                        <constraint firstItem="rEh-d7-BgV" firstAttribute="leading" secondItem="D86-GZ-AUO" secondAttribute="trailing" constant="8" id="bLN-Kp-xwa"/>
-                                        <constraint firstItem="PhZ-53-bMf" firstAttribute="leading" secondItem="D86-GZ-AUO" secondAttribute="trailing" constant="8" id="iUO-7g-LOz"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="PhZ-53-bMf" secondAttribute="trailing" id="pSp-ck-Vz5"/>
+                                        <constraint firstItem="rEh-d7-BgV" firstAttribute="leading" secondItem="D86-GZ-AUO" secondAttribute="trailing" constant="20" id="bLN-Kp-xwa"/>
+                                        <constraint firstItem="PhZ-53-bMf" firstAttribute="leading" secondItem="D86-GZ-AUO" secondAttribute="trailing" constant="20" id="iUO-7g-LOz"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="D86-GZ-AUO" secondAttribute="bottom" constant="10" id="l6N-FS-sHQ"/>
+                                        <constraint firstItem="D86-GZ-AUO" firstAttribute="centerY" secondItem="HF6-ZK-Eum" secondAttribute="centerY" id="xRp-VI-meO"/>
+                                        <constraint firstItem="PhZ-53-bMf" firstAttribute="top" secondItem="rEh-d7-BgV" secondAttribute="bottom" constant="5" id="zmU-qm-P50"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
